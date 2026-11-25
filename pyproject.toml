@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinel-audit"
+version = "0.1.0"
+description = "Scope-gated, passive web application security auditing framework"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "SENTINEL contributors" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+sentinel = "sentinel.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,13 @@
+targets:
+  - https://app.example.test
+allowed_hosts:
+  - app.example.test
+allowed_schemes: [https]
+allowed_ports: [443]
+allowed_paths: ["/"]
+mode: passive
+limits:
+  requests_per_second: 2
+  max_requests: 50
+  timeout_seconds: 10
+  max_response_bytes: 1048576
